@@ -1,1 +1,9 @@
 target/
+bin/**
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+.settings/
