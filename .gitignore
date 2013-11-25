@@ -7,3 +7,5 @@ tmp/**/*
 *.swp
 *~.nib
 .settings/
+/.classpath
+/.project
