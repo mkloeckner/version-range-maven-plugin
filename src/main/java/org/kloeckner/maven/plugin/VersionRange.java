@@ -1,7 +1,7 @@
 package org.kloeckner.maven.plugin;
 
 /*
- * Copyright 2001-2005 The Apache Software Foundation.
+ * Copyright 2013 mk.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -54,7 +54,7 @@ import org.jdom.output.XMLOutputter;
 import org.kloeckner.maven.plugin.util.VersionRangeUtils;
 
 /**
- * Goal which touches a timestamp file.
+ * Goal updates the configured dependencies within the specified ranges.
  * 
  * @goal use-latest-versions
  * 

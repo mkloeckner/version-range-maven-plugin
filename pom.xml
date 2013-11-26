@@ -5,8 +5,8 @@
 	<artifactId>version-range-maven-plugin</artifactId>
 	<packaging>maven-plugin</packaging>
 	<version>0.1-SNAPSHOT</version>
-	<url>http://maven.apache.org</url>
-
+	<url>https://github.com/mkloeckner/version-range-maven-plugin</url>
+	
 	<parent>
 		<groupId>org.sonatype.oss</groupId>
 		<artifactId>oss-parent</artifactId>
@@ -16,6 +16,28 @@
 	<prerequisites>
 		<maven>3.1.0</maven>
 	</prerequisites>
+
+	<licenses>
+		<license>
+			<name>The Apache Software License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<developers>
+		<developer>
+			<id>mkloeckner</id>
+			<name>Martin Kloeckner</name>
+			<email>m.kloeckner@gmail.com</email>
+		</developer>
+	</developers>
+
+	<scm>
+		<connection>scm:git:git@github.com:mkloeckner/version-range-maven-plugin.git</connection>
+		<developerConnection>scm:git:git@github.com:mkloeckner/version-range-maven-plugin.git</developerConnection>
+		<url>https://github.com/mkloeckner/version-range-maven-plugin.git</url>
+	</scm>
 
 	<properties>
 		<aetherVersion>0.9.0.M3</aetherVersion>
