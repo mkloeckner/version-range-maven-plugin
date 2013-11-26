@@ -3,7 +3,7 @@
 	<groupId>org.kloeckner.maven.plugin</groupId>
 	<artifactId>version-range-maven-plugin</artifactId>
 	<packaging>maven-plugin</packaging>
-	<version>0.1-SNAPSHOT</version>
+	<version>0.1</version>
 	<url>https://github.com/mkloeckner/version-range-maven-plugin</url>
 	
 	<parent>
