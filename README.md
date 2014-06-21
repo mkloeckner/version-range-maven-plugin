@@ -3,6 +3,10 @@ version-range-maven-plugin
 
 automate update process for certain dependencies by specifying version ranges
 
+![travis build status](https://travis-ci.org/mkloeckner/version-range-maven-plugin.svg?branch=master "Travis Build Status")
+
+
+
 # Problem:
 
 versions-maven-plugin allows you to update versions of dependencies in your project. 
