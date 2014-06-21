@@ -315,6 +315,7 @@ public class VersionRangeUtils {
 		} catch (IOException e) {
 			throw new MojoExecutionException("IOException while searching '" + filename + "'; path='" + path + "'", e);
 		}
+		
 
 		// naja ...
 		List<String> list = new ArrayList<String>();
