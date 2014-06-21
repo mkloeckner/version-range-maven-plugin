@@ -103,6 +103,8 @@
 			<version>1.1</version>
 		</dependency>
 
+		
+
 		<!-- for test -->
 		<dependency>
 			<groupId>org.apache.wicket</groupId>
@@ -122,6 +124,26 @@
 
 	<!-- for test: active profiles -->
 	<profiles>
+		<profile>
+		<id>gpg-sign</id>
+		<build>
+		<plugins>
+			<plugin>
+	               	<groupId>org.apache.maven.plugins</groupId>
+		       	<artifactId>maven-gpg-plugin</artifactId>
+                        <executions>
+                        	<execution>
+                                <id>sign-artifacts</id>
+                                <phase>verify</phase>
+                                <goals>
+                                	<goal>sign</goal>
+                                </goals>
+                                </execution>
+                         </executions>
+	                 </plugin>
+		</plugins>
+		</build>
+		</profile>
 		<profile>
 			<id>sample</id>
 			<activation>
@@ -208,19 +230,6 @@
 						<id>attach-javadocs</id>
 						<goals>
 							<goal>jar</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-gpg-plugin</artifactId>
-				<executions>
-					<execution>
-						<id>sign-artifacts</id>
-						<phase>verify</phase>
-						<goals>
-							<goal>sign</goal>
 						</goals>
 					</execution>
 				</executions>
